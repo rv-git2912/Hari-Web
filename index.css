@@ -129,6 +129,7 @@
               align-items: center;
               width: 100%;
               flex-direction: column;
+              flex-wrap: wrap;
           }
           .sec1{
               width: 100%;
@@ -210,6 +211,7 @@
               align-items: center;
               text-align: left;
               margin-top: 50px;
+              flex-wrap: wrap;
           }
           .text-content {
               flex: 1;
