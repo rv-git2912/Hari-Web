@@ -1,0 +1,281 @@
+.prompt-thin {
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .prompt-extralight {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .prompt-light {
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .prompt-regular {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .prompt-medium {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .prompt-semibold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .prompt-bold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .prompt-extrabold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .prompt-black {
+    font-family: "Prompt", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .prompt-thin-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .prompt-extralight-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .prompt-light-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .prompt-regular-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .prompt-medium-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .prompt-semibold-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .prompt-bold-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .prompt-extrabold-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .prompt-black-italic {
+    font-family: "Prompt", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+          * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: "Prompt", sans-serif;
+          }
+          body {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: auto;
+              background-color: #ffffff;
+             
+              text-align: center;
+              
+             
+          }
+          .flexmain{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              flex-direction: column;
+          }
+          .sec1{
+              width: 100%;
+              height: 700px;
+              background-image: linear-gradient(315deg, #ffffff 0%, #1e90ff 74%);
+          }
+          .sec2{
+              margin-top: 30px;
+          }
+          .container {
+              text-align: center;
+          }
+          h1 {
+              font-size: 5rem;
+              font-weight: bold;
+  
+          }
+         .why{
+          font-size:3rem;
+          font-weight: bold;
+         }
+          p {
+              font-size: 1.2rem;
+              color: #555;
+              margin-bottom: 20px;
+          }
+          .card {
+              background: white;
+              padding: 20px;
+              border-radius: 20px;
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+              width: 350px;
+              margin: auto;
+              height: 400px;
+              position: relative;
+              margin-top: 50px;
+          }
+          .profile-img {
+              width: 150px;
+              height: 150px;
+              border-radius: 50%;
+              object-fit: cover;
+              margin-top: 0px;
+          }
+          .status {
+              position: absolute;
+              top: 20px;
+              right: 20px;
+              font-size: 14px;
+              color: green;
+          }
+          .button {
+              display: inline-block;
+              margin-top: 20px;
+              padding: 10px 20px;
+              background: black;
+              color: white;
+             text-indent: 10px;
+             text-decoration: none;
+              border-radius: 20px;
+              font-weight: bold;
+              width:300px;
+          }
+          .HelpText{
+             margin-top: 10px;
+          }
+          .nameText{
+              margin-top: 20px;
+          }
+          .arrow{
+             transform: rotate(30deg);
+          }
+          .comapnyName{
+              margin-top: 50px;
+          }
+          .why-section {
+              display: flex;
+              max-width: 1000px;
+              align-items: center;
+              text-align: left;
+              margin-top: 50px;
+          }
+          .text-content {
+              flex: 1;
+              padding-right: 20px;
+          }
+          .why-section h2 {
+              font-size: 2rem;
+              font-weight: bold;
+              margin-bottom: 20px;
+          }
+          .why-section p {
+              font-size: 1rem;
+              color: #555;
+              line-height: 1.5;
+          }
+          .why-section img {
+              max-width: 400px;
+              border-radius: 10px;
+          }
+          .footer {
+              margin-top: 50px;
+              text-align: center;
+          }
+          .footer a {
+              font-weight: bold;
+              text-decoration: none;
+              color: black;
+          }
+          .social-icons {
+              margin-top: 10px;
+          }
+          .social-icons img {
+              width: 30px;
+              margin: 5px;
+          }
+          .form-container {
+              margin-top: 50px;
+              padding: 20px;
+              background: white;
+              border-radius: 10px;
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+              width: 400px;
+          }
+          .form-container h3 {
+              margin-bottom: 15px;
+          }
+          .form-container input, .form-container textarea {
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 10px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+          }
+          .form-container button {
+              padding: 10px 20px;
+              background: black;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+          }
+          .compimg{
+              height: 300px;
+              width: 300px;
+              border-radius: 50%;
+          }
+          .form{
+              margin: 50px;
+          }
