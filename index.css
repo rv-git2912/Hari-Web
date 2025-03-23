@@ -213,6 +213,13 @@
               margin-top: 50px;
               flex-wrap: wrap;
           }
+          /* @media (max-width: 800px) {
+            .why-section {
+              flex-direction: column;
+              text-align: center;
+               }
+          } */
+          
           .text-content {
               flex: 1;
               padding-right: 20px;
@@ -281,3 +288,9 @@
           .form{
               margin: 50px;
           }
+          @media (max-width: 800px) {
+            .why-section {
+              flex-direction: column;
+              text-align: center;
+            } 
+        }
