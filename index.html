@@ -3,65 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="index.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Insure UI</title>
-    <script src="index.js"></script>
-  
+    <link rel="stylesheet" href="index.css">  <!-- Linking CSS -->
+    <title>Isure Website</title>
 </head>
 <body>
-    <div class="flexmain">
-    <div class="sec1">
-    <div class="container">
-        <h1 style="font-family: 'Times New Roman', Times, serif;color: peachpuff;" class="companyName">Insure</h1>
-        <p style="color:white; margin-top: 20px;">AI COMING SOON...</p>
-        <div class="card">
-            <span class="status">🟢 online</span>
-            <img class="profile-img" src="https://cdn.dribbble.com/users/238327/screenshots/2380321/confused_director.gif" alt="Profile">
-            <h2 class="nameText">Hari</h2>
-            <p class="HelpText">Helps you find an Expert Advisor</p>
-            <button class="button" onclick="myFunction()"> Talk to Hari <span class="arrow">→</span></button>
-            <!-- <button onclick="myFunction()"> go to chat page</button> -->
-        </div>
+<!-- Navigation -->
+<nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <!-- <a href="#testimonials">Testimonials</a> -->
+    <a href="#contact">Contact</a>
+    <!-- <button class="mode-toggle" onclick="toggleMode()">🌙</button> -->
+</nav>
+
+<!-- Back-to-Top Button -->
+<button id="backToTop" onclick="scrollToTop()">⬆️</button>
+
+
+<!-- Floating AI Coming Soon -->
+<div class="floating-ai">
+    🚀 AI Coming Soon
+</div>
+
+<!-- Hero Section -->
+<header class="futuristic-hero">
+    <div class="content">
+        <h1>Step into the <span class="highlight">future of insurance</span></h1>
+        <p>Join thousands of policyholders using IMsure to secure their future with fast, reliable, and transparent insurance solutions.</p>
+        <button class="glow-button" onclick="openWhatsApp()">
+            Talk to SAI
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
+        </button>
+
     </div>
-    </div>
+
     
-<div class="sec2">
-    <div class="why-section">
-        <div class="text-content">
-            <h2 class="why">Why we built Insure?</h2>
-            <p>Inusrance can be overwhelming-filled with complex terms,endless options,and uncertainty.Finding the right coverge and guidance shouldn't be a privelege-it should be accesible to everyone.</p>
-            <p>That’s why we’re building <strong>Insure</strong>. Where you can find your AI-powered insurance advisor,guiding you with personalized insights,simplifying decisions,and giving you the confience to protect what matters most.</p>
-            <p>We’re not replacing human connection. We’re making AI a part of your insurance journey—to support, uplift, and help you move forward faster than ever.</p>
-        </div>
-        <img class="compimg" src="insureimage.jpg" alt="Community Illustration" >
-    </div>
-
-    <!-- <div class="form-container">
-        <h3>Stay Updated</h3>
-        <input type="email" placeholder="Enter your email" required>
-        <textarea placeholder="Your message"></textarea>
-        <button type="submit">Submit</button>
+    <!-- Confused Professor GIF -->
+    <!-- <div class="gif-container">
+        <img src="https://cdn.dribbble.com/users/238327/screenshots/2380321/confused_director.gif" alt="Confused Professor" class="professor-gif">
     </div> -->
-    <div class="form">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScp93IS2_owq5TghqiXlrAF8LYhvSTLU0JOkYjfKhqE-R_4Bw/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-    <div class="footer">
-       
-        <div class="social-icons">
-            <a href="https://www.instagram.com/trustmeinsure?igsh=MXY0NmVwNGQwejN5aQ==">
-                <i class="fa-brands fa-instagram"></i> Instagram
-           </a>
-            
-        </div>
-        <p>2025 © Insure</p>
+
+    <!-- Floating Icons -->
+    <div class="floating-icons">
+        <img src="https://cdn-icons-png.flaticon.com/512/3103/3103446.png" alt="shield">
+        <img src="https://cdn-icons-png.flaticon.com/512/846/846449.png" alt="money">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="life">
     </div>
-</div>
 
-</div>
+    <!-- Particle Animation -->
+    <div id="particles"></div>
+</header>
 
-</div>
+<!-- Services Section -->
+ <div>
+    <section class="container cards" id="services">
+        <div style="box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;" class="card">
+            <h3 style="color: aliceblue;">AI Advisor</h3>
+            <p style="color: aliceblue;">We Provide AI Expert advisor for all your insurance needs.</p>
+        </div>
+        <div style="box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;" class="card">
+            <h3 style="color: aliceblue;">24/7 Support</h3>
+            <p style="color: aliceblue;">Our team is always ready to assist you.</p>
+        </div>
+        <div style="box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;" class="card">
+            <!-- <h3 style="color: aliceblue;">24/7 Support</h3> class="card"> -->
+            <h3 style="color: aliceblue;">SECURE COVERAGE</h3>
+            <p style="color: aliceblue;">Providing You correct information about insurance policy to prevent mis selling.</p>
+        </div>
+    </section>
+ </div>
+
+<!-- Testimonials Section
+<section class="testimonials" id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <p>"IMsure made my claim process smooth and stress-free. Highly recommend!"</p>
+            <span>- Priya Sharma</span>
+        </div>
+        <div class="testimonial">
+            <p>"Excellent customer service and affordable plans!"</p>
+            <span>- Rahul Mehta</span>
+        </div>
+    </div>
+</section> -->
+
+<!-- About Section -->
+ <div style="background-color:black;">
+    <section class="container about" id="about">
+        <h2>About Us</h2>
+        <br>
+        <p>At Isure, we are transforming the insurance landscape with the power of artificial intelligence.
+            <br>
+             Our AI-driven platform offers smarter, faster, and more accurate insurance solutions tailored to your unique needs.
+             <br>
+             We believe that insurance should be simple, transparent, and accessible — and that’s exactly what we deliver.
+    
+        </p>
+    </section>
+    
+ </div>
+
+<!-- New Section inspired by image -->
+<section class="product-tour">
+    <div class="tour-container">
+        <div class="tour-text">
+            <h2>Get started easily with a personalized product tour</h2>
+            <p>Our onboarding specialists will help you get started with confidence, ensuring you understand the benefits of AI-powered insurance. Included with all plans.</p>
+            <a href="#" class="tour-btn">Learn more about us ➡️</a>
+        </div>
+        <div class="tour-image">
+            <img src="https://media.licdn.com/dms/image/v2/D4D12AQHqizU0Wp2K9w/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1682581925149?e=2147483647&v=beta&t=r6sCnKGwklRFzQxJoh7Vo0gHqRS8b5wAfK3uLpRjBdI" alt="Onboarding Specialist">
+        </div>
+    </div>
+</section>
+
+<canvas id="fireworks-canvas"></canvas>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <p>2025 © Isure</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/trustmeinsure?igsh=MXY0NmVwNGQwejN5aQ==" target="_blank" class="instagram-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="index.js"></script>
+
 </body>
 </html>
